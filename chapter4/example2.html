@@ -9,9 +9,15 @@
     <!-- ol is for ordered list where items are numbered rather than bulleted -->
     <!-- when elements are listed together like li em, it means to apply the style to em when nested within an li element -->
     <!-- when delemeted by a comma like li, em apply the same style to all li and em elements everywhere -->
-   
+    <!-- the hover/hover em shows various events of hover -->
     <style type = "text/css">
 
+     .special {text-decoration: overline}
+     .special:hover { width: 25%;background-color: #ddffff }
+     .special:hover em {background-color:red}
+        .special em:hover {
+            background-color: green
+        }
          a.nodec  { text-decoration: none }
 
          a:hover  { text-decoration: underline;
@@ -34,7 +40,7 @@
 </head>
 <body>
     <!-- Since the <em> is not nested within an li, this example will apply the default rules of <em> element and not the li em attributes from the style class -->
-   <h1>Shopping list for <em>Monday</em>:</h1>
+   <h1 class="special">Shopping list for <em>Monday</em>:</h1>
 
   <ul>
      Milk<br /> 
