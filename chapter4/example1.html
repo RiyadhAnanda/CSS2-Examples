@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <!-- this begins the style sheet section -->
+    <!-- em/h1/p lines are examples of redifining/modifying existing elements -->
+    <!-- in h1, the comma delimits priority, if arial is not in system, then use san-serif, if san-serif is not in system use default browser font -->
+    <!-- .special is a class that can be applied to any element -->
+    <!-- span is a generic element that has nothing in it, meaning you can give any meaning to it you want, span is inline, div would be for blocks -->
+    <!-- span.small means that small is a class that can only be used by a span (indicated by the span.)  -->
+  <style type = "text/css">
+    em      { background-color: #8000ff;  color: white }   
+      h1      {
+          font-family: 'Times New Roman', sans-serif;
+        
+      }
+    p       { font-size: 14pt }
+      .special {
+          color: blue;
+          text-decoration: overline;
+      }
+    span {font-size: 16pt; font-family: Verdana; color:red }
+             
+    span.small {font-size:8pt}
+    span.other {font-size:8pt; font-style:italic; font-weight:bolder; background-color:black }
+
+
+      .extra {
+          background-color: #CC66FF;
+          font-size: 22px;
+          font-weight: bold;
+      }
+
+
+  </style>
+
+     
+
+</head>
+<body>
+  <!-- this class attribute applies the .blue style -->
+  
+  <!-- special takes the redefinition of h1 and then changes it to blue -->
+  <h1 class = "special">UCA</h1>
+
+  <!-- adds special and extra class attributes to the paragraph below -->
+  <p class="special extra">UCA is an internationally recognized University
+  </p>
+
+  <h1>Clients</h1>
+
+    <!-- innermost call has priority if there are duplicate/overlapping attributes -->
+  <p class = "special"> The company's clients include many 
+     <!-- the inline em call overrides the default attributes of p class = special -->
+     <em>Fortune 1000 companies</em>UCA has many <span>companies</span> who hire their <span class ="small">students</span>
+     <span class="other">for many tasks</span>
+  </p>
+
+</body>
+</html>

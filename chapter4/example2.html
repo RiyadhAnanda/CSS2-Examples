@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!-- : stands for a psuedo class, which means wait until a certain action is performed to invoke attributes -->
+    <!-- in a:hover, the a class isn't applied until the hover action is performed -->
+    <!-- ul is an unordered list, a list that contains a bullet next to each item, all within <ul> </ul> delimited by a <li> <li> for each element -->
+    <!-- ol is for ordered list where items are numbered rather than bulleted -->
+    <!-- when elements are listed together like li em, it means to apply the style to em when nested within an li element -->
+    <!-- when delemeted by a comma like li, em apply the same style to all li and em elements everywhere -->
+   
+    <style type = "text/css">
+
+         a.nodec  { text-decoration: none }
+
+         a:hover  { text-decoration: underline;
+                    color: red;
+                    background-color: #ccffcc }
+
+         li em    { color: red;
+                    font-weight: bold }
+
+         ul       { margin-left: 75px }
+
+         ul ul    { text-decoration: underline;
+                    margin-left: 15px }
+                    
+         
+
+     </style>
+
+
+</head>
+<body>
+    <!-- Since the <em> is not nested within an li, this example will apply the default rules of <em> element and not the li em attributes from the style class -->
+   <h1>Shopping list for <em>Monday</em>:</h1>
+
+  <ul>
+     Milk<br /> 
+     Bread
+
+     <!-- example of nested ul ul, since this ul is contained within the above ul, it will add the additional 15px margin left ontop of the already attributed 75px and then underline the elements -->
+     <ul>
+
+      <p>White bread</p>
+      <p>Rye bread</p>
+      <p>Whole wheat bread</p>
+
+     </ul>
+         
+     <li>Rice</li>
+     <li>Potatoes</li>
+     <!-- since this example of <em> is nested within an <li> it will apply the attributes of li em from the style class above -->
+     <li>Pizza <em>with mushrooms</em></li>
+   </ul>
+
+   <!-- a specifies no text declaration;however, since a:hover is created, the attributes of a:hover will be applied when the user hovers over the hyperlink --> 
+   <p><a  href = "http://www.food.com">
+   Go to the Grocery store</a></p>
+
+
+</body>
+</html>
