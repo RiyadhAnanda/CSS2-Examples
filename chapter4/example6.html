@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <!-- background images -->
+    <!-- can specify any image you want as a background that can be applied to a container -->
+    <!-- width can always be set to a percentage, there are much more restriction on height -->
+    <!-- repeat-x only repeats the image across the x axis until the capacity is filled -->
+    <!-- 100% height just indicates 100% capacity of the <body> </body> element -->
+    <!-- Height pertains to the percentage of the height of the containing element (body) -->
+
+    <style type = "text/css">
+
+
+         p     { font-size: 18pt;
+                 color: #aa5588; 
+                 font-family: arial, sans-serif;
+          height: 138px;
+        }
+
+         .dark { font-weight: bold }
+
+        .div1
+        {
+          width: 100%;
+          height: 481px;
+          background-image: url('images/header-bg.gif');
+          background-repeat: repeat-x;
+        }
+
+      </style>
+
+</head>
+<body>
+          <div class="div1"><p>
+      
+      This example uses the background-image, 
+      background-position and background-attachment
+      styles to place the <span class = "dark">UCA.</span> logo in the bottom, 
+      right corner of the page. Notice how the logo 
+      stays in the proper position when you resize the 
+      browser window.
+      </p></div>
+
+</body>
+</html>
