@@ -99,6 +99,7 @@
     <Content Include="example2.html" />
     <Content Include="example3.html" />
     <Content Include="example4.html" />
+    <Content Include="example5.html" />
     <Content Include="example7.html" />
     <Content Include="images\circle.gif" />
     <Content Include="images\header-bg.gif" />
