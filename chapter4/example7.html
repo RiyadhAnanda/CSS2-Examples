@@ -3,50 +3,45 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <style>
-        div {
-            background-color: #ffccff;
-            margin-bottom: .5em
-        }
 
-        .class1 {
-            width: 100px;
-            height: 150px
-        }
+        <!-- overflow:scroll shows placeholder for both horizontal and vertical scrollbars, overflow:auto only showcases scrollbar when/where needed -->
+        <!-- margin: 0 auto means dont add any additional margin; and automatically set the left and right margins to center the div -->
+         <style>
+         div { background-color: #ffccff;
+               margin-bottom: .5em }
+        
+         html, body {height: 100%;}
+         .class1 { width: 20%; height: 100%}
+         .class2 {width: 500px; text-align: center;margin: 0 auto}
+         .class3 { width: 200px; height: 100px; overflow:scroll}
 
-        .class2 {
-            width: 500px;
-            text-align: center
-        }
+        </style>
 
-        .class3 {
-            width: 200px;
-            height: 100px;
-            overflow: auto;
-        }
-    </style>
 
 </head>
 <body>
-    <div class="class1">
-        Here is some
-        text that goes in a box which is
-        set to stretch across twenty precent
-        of the width of the screen.
-    </div>
+      <!-- Unformatted text contained in divs -->
+      <!-- class1 causes the text to wrap around a shortened width area -->
+      <div class="class1"> Here is some
+      text that goes in a box which is
+      set to stretch across twenty precent 
+      of the width of the screen.</div>
 
-    <div class="class2 ">
-        Here is some CENTERED text that goes in a box
-        which is set to stretch across eighty precent of
-        the width of the screen.
-    </div>
+      <!-- class2 showcases centered aligned text within a div -->
+      <div class = "class2 ">
+      Here is some CENTERED text that goes in a box 
+      which is set to stretch across eighty precent of 
+      the width of the screen.</div>
 
-    <div class="class3">
-        This box is only twenty percent of
-        the width and thirty percent of the height.
-        What do we do if it overflows? Set the
-        overflow property to scroll see it overflow now it is way too far now!
-    </div>
+      <!-- class3 contains more text than background,therefore it causes overflow -->
+      <!-- use overflow:scroll inorder to scroll through the overflow rather than directly output it -->
+      <div class = "class3">
+      This box is only twenty percent of
+      the width and thirty percent of the height.
+      What do we do if it overflows? Set the
+      overflow property to scroll see it overflow now it is way too far now!</div>
+
+
 
 </body>
 </html>
