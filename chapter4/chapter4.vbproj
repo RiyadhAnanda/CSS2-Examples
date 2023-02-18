@@ -102,6 +102,7 @@
     <Content Include="example5.html" />
     <Content Include="example6.html" />
     <Content Include="example7.html" />
+    <Content Include="example8.html" />
     <Content Include="images\circle.gif" />
     <Content Include="images\header-bg.gif" />
     <Content Include="images\i.gif" />
