@@ -95,6 +95,7 @@
     <Content Include="example1.html" />
     <Content Include="example10.html" />
     <Content Include="example11.html" />
+    <Content Include="example11a.html" />
     <Content Include="example12.html" />
     <Content Include="example2.html" />
     <Content Include="example3.html" />
