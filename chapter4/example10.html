@@ -3,8 +3,46 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+
+    <!-- every element that takes up space can have a border -->
+    <!-- there are 3 main manipulations: width, style, and color -->
+    <!-- groove ridge inset and outset are CSS2 3-D borders -->
+    <style type="text/css">
+    .dotted {
+      border-right: dotted;
+      border-width: 5px;
+    }
+   .dashed {border-style: dashed}
+   .solid {border-bottom: solid}
+   .double {border-top: double}
+   .border_color {border-color: #0000ff}
+   .color1 {color: #ff0000}
+   .ridge {border-style: ridge}
+   .inset {border-style: inset}
+   .outset {border-style: outset}
+   .groove {border-style: groove}
+
+</style>
+
 </head>
 <body>
+
+  <p class="dotted ">A dotted border</p>
+
+  <p class="dashed color1 border_color">A dashed border</p>
+
+  <p class="solid color1">A solid border</p>
+
+  <p class="double">A double border</p>
+
+  <p class="groove">A groove border</p>
+
+  <p class="ridge ">A ridge border</p>
+
+  <p class="inset">An inset border</p>
+
+  <p class="outset">An outset border</p>
+
 
 </body>
 </html>
