@@ -3,14 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+
+    <<!-- building menu bar -->
     <style type = "text/css">
          body { font-family:  "Times New Roman", Times, serif
                               }
                               
-        .menu_bar { 
-                       display: flex;
-                       flex-direction: column;
-                       position: fixed;
+        .menu_bar { position: fixed;
                        left: 100px;
                        top: 83px;
                        width: 100em;
@@ -26,7 +25,7 @@
           /*padding-left: 1em;*/
           text-align: center;
           width: 10em;
-          
+          float: left;
           background-color: rgb(222,213,175);
         }
        .menu1:hover a  { display: block }
@@ -41,9 +40,11 @@
       </style>
 
 
+
+
 </head>
 <body>
-    <div class="menu_bar">
+   <div class="menu_bar">
        <div class="menu1">
          Menu<BR/>1
          <a href="#">Cat1</a>
@@ -62,6 +63,8 @@
          <a href = "#">Cat4</a>
        </div>
     </div>
+
+
 
 
 </body>
